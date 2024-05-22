@@ -1,4 +1,3 @@
----
 - name: Create user fahmy on Linux
   become: yes
   hosts: all
