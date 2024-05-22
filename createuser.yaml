@@ -1,0 +1,12 @@
+---
+- name: Create user fahmy on Linux
+  become: yes
+  tasks:
+    - name: Ensure user fahmy exists
+      user:
+        name: fahmy
+        state: present
+        comment: "User Fahmy"
+        shell: /bin/bash
+        home: /home/fahmy
+        create_home: yes
